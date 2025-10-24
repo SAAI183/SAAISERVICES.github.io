@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SAAI – Diseño 3D + Automatización</title>
+  <meta name="description" content="SAAI: Diseño 3D, simulación de mecanismos y sistemas automáticos (bandas, clasificadores, dosificación) para industria y agro en RD." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: dark; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif; }
+    .card { border-radius: 1rem; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.05); }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800 text-white">
+  <header class="sticky top-0 z-30 backdrop-blur bg-black/30 border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-xl font-semibold tracking-wide">SAAI<span class="text-teal-400">.RD</span></a>
+      <button id="navToggle" class="md:hidden inline-flex items-center justify-center rounded-xl px-3 py-2 border border-white/20">
+        <span class="sr-only">Abrir menú</span>☰
+      </button>
+      <ul id="navMenu" class="hidden md:flex items-center gap-8 text-sm text-white/80">
+        <li><a href="#servicios" class="hover:text-white">Servicios</a></li>
+        <li><a href="#portafolio" class="hover:text-white">Portafolio</a></li>
+        <li><a href="#proceso" class="hover:text-white">Proceso</a></li>
+        <li><a href="#contacto" class="hover:text-white">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="md:inline-flex hidden rounded-2xl px-4 py-2 bg-teal-500/90 hover:bg-teal-400 transition">Cotiza tu proyecto</a>
+    </nav>
+    <div id="navDropdown" class="md:hidden hidden px-6 pb-4">
+      <ul class="flex flex-col gap-3 text-sm text-white/80">
+        <li><a href="#servicios" class="block rounded-xl px-4 py-2 bg-white/5 border border-white/10">Servicios</a></li>
+        <li><a href="#portafolio" class="block rounded-xl px-4 py-2 bg-white/5 border border-white/10">Portafolio</a></li>
+        <li><a href="#proceso" class="block rounded-xl px-4 py-2 bg-white/5 border border-white/10">Proceso</a></li>
+        <li><a href="#contacto" class="block rounded-xl px-4 py-2 bg-white/5 border border-white/10">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 opacity-30" aria-hidden="true">
+      <div class="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-teal-500 blur-3xl"></div>
+      <div class="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-indigo-500 blur-3xl"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          Diseño 3D + Automatización para
+          <span class="text-teal-400">industria</span>
+          y
+          <span class="text-indigo-400">agro.</span>
+        </h1>
+        <p class="mt-5 text-white/80 max-w-xl">
+          En SAAI convertimos ideas en mecanismos reales: modelado 3D, simulación de movimiento y sistemas automáticos
+          (bandas, clasificadores, dosificación). Hecho en RD, con estándar industrial.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#servicios" class="rounded-2xl px-5 py-3 bg-white text-slate-900 font-medium hover:bg-white/90 transition">Ver servicios</a>
+          <a href="#contacto" class="rounded-2xl px-5 py-3 border border-white/20 hover:border-white/40">Agenda una llamada</a>
+        </div>
+        <div class="mt-6 text-xs text-white/60">Santo Domingo, RD · Respuesta en 24h · Presupuestos sin costo</div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] card grid place-items-center shadow-2xl overflow-hidden">
+          <img src="separador.png" alt="Separadora de limones SAAI" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl md:text-4xl font-semibold">Servicios</h2>
+    <p class="text-white/70 mt-2">Paquetes claros, listos para producción.</p>
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
+      <div class="card p-6 hover:bg-white/10 transition">
+        <h3 class="text-xl font-semibold">Diseño y Modelado 3D</h3>
+        <p class="mt-2 text-white/70">STL, planos y renders listos para impresión o fabricación. Optimización para FDM/SLA/SLS y mecanizado.</p>
+        <ul class="mt-4 text-sm list-disc list-inside text-white/60">
+          <li>Planos técnicos + tolerancias</li>
+          <li>Revisión DFM/DFS</li>
+        </ul>
+      </div>
+      <div class="card p-6 hover:bg-white/10 transition">
+        <h3 class="text-xl font-semibold">Simulación de Mecanismos</h3>
+        <p class="mt-2 text-white/70">Estudios de movimiento, colisiones, cinemática; validación previa a fabricar.</p>
+        <ul class="mt-4 text-sm list-disc list-inside text-white/60">
+          <li>Animaciones de ciclo</li>
+          <li>Reportes PDF de resultados</li>
+          <li>Iteraciones rápidas</li>
+        </ul>
+      </div>
+      <div class="card p-6 hover:bg-white/10 transition">
+        <h3 class="text-xl font-semibold">Sistemas Automáticos</h3>
+        <p class="mt-2 text-white/70">Bandas, clasificadores y dosificación a medida. Integración con sensores y control básico.</p>
+        <ul class="mt-4 text-sm list-disc list-inside text-white/60">
+          <li>Layout + BOM</li>
+          <li>Especificación de actuadores</li>
+          <li>Plan de pruebas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="portafolio" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="flex items-end justify-between">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-semibold">Portafolio</h2>
+        <p class="text-white/70 mt-2">Ejemplos reales de diseño + automatización.</p>
+      </div>
+      <a href="#contacto" class="hidden md:inline rounded-2xl px-4 py-2 border border-white/20 hover:border-white/40">Solicitar demo</a>
+    </div>
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <figure class="card overflow-hidden">
+        <img src="separador.png" alt="Separadora automática de limones – SAAI" class="w-full h-full object-cover">
+      </figure>
+      <div class="card p-6 flex flex-col justify-center">
+        <h3 class="text-2xl font-semibold">Separadora automática de limones</h3>
+        <p class="mt-3 text-white/80">Sistema modular con clasificación por tamaño, transporte automatizado y estación de inspección óptica. Fabricado en acero inoxidable, pensado para el sector agrícola dominicano.</p>
+        <ul class="mt-4 text-sm text-white/70 space-y-2">
+          <li>• Capacidad objetivo: 30–60 limones/min</li>
+          <li>• Clasificación por tamaño (S/M/L)</li>
+          <li>• Diseñado para limpieza rápida y mantenimiento</li>
+        </ul>
+        <a href="#contacto" class="mt-6 inline-block rounded-2xl px-4 py-2 bg-teal-500/90 hover:bg-teal-400 transition w-max">Cotiza un sistema similar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="portafolio" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <figure class="card overflow-hidden">
+        <img src="cnc.png" alt="Separadora automática de limones – SAAI" class="w-full h-full object-cover">
+      </figure>
+      <div class="card p-6 flex flex-col justify-center">
+        <h3 class="text-2xl font-semibold">Cortadora de madera</h3>
+        <p class="mt-3 text-white/80">Sistema modular con clasificación por tamaño, transporte automatizado y estación de inspección óptica. Fabricado en acero inoxidable, pensado para el sector agrícola dominicano.</p>
+        <ul class="mt-4 text-sm text-white/70 space-y-2">
+          <li>• Capacidad objetivo: 30–60 limones/min</li>
+          <li>• Clasificación por tamaño (S/M/L)</li>
+          <li>• Diseñado para limpieza rápida y mantenimiento</li>
+        </ul>
+        <a href="#contacto" class="mt-6 inline-block rounded-2xl px-4 py-2 bg-teal-500/90 hover:bg-teal-400 transition w-max">Cotiza un sistema similar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="portafolio" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <figure class="card overflow-hidden">
+        <img src="plano.png" alt="Separadora automática de limones – SAAI" class="w-full h-full object-cover">
+      </figure>
+      <div class="card p-6 flex flex-col justify-center">
+        <h3 class="text-2xl font-semibold">Planos de piezas</h3>
+        <p class="mt-3 text-white/80">Sistema modular con clasificación por tamaño, transporte automatizado y estación de inspección óptica. Fabricado en acero inoxidable, pensado para el sector agrícola dominicano.</p>
+        <ul class="mt-4 text-sm text-white/70 space-y-2">
+          <li>• Capacidad objetivo: 30–60 limones/min</li>
+          <li>• Clasificación por tamaño (S/M/L)</li>
+          <li>• Diseñado para limpieza rápida y mantenimiento</li>
+        </ul>
+        <a href="#contacto" class="mt-6 inline-block rounded-2xl px-4 py-2 bg-teal-500/90 hover:bg-teal-400 transition w-max">Cotiza un sistema similar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="portafolio" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <figure class="card overflow-hidden">
+        <img src="decisiones.png" alt="Separadora automática de limones – SAAI" class="w-full h-full object-cover">
+      </figure>
+      <div class="card p-6 flex flex-col justify-center">
+        <h3 class="text-2xl font-semibold">Decisiones</h3>
+        <p class="mt-3 text-white/80">Sistema modular con clasificación por tamaño, transporte automatizado y estación de inspección óptica. Fabricado en acero inoxidable, pensado para el sector agrícola dominicano.</p>
+        <ul class="mt-4 text-sm text-white/70 space-y-2">
+          <li>• Capacidad objetivo: 30–60 limones/min</li>
+          <li>• Clasificación por tamaño (S/M/L)</li>
+          <li>• Diseñado para limpieza rápida y mantenimiento</li>
+        </ul>
+        <a href="#contacto" class="mt-6 inline-block rounded-2xl px-4 py-2 bg-teal-500/90 hover:bg-teal-400 transition w-max">Cotiza un sistema similar</a>
+      </div>
+    </div>
+  </section>
+  <section id="proceso" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl md:text-4xl font-semibold">Nuestro proceso</h2>
+    <div class="mt-8 grid md:grid-cols-4 gap-6">
+      <div class="card p-5"><div class="text-2xl">1</div><h3 class="mt-2 font-semibold">Brief y estimación</h3><p class="text-white/70 mt-1 text-sm">Revisión del reto, alcance y propuesta en 48h.</p></div>
+      <div class="card p-5"><div class="text-2xl">2</div><h3 class="mt-2 font-semibold">Diseño 3D</h3><p class="text-white/70 mt-1 text-sm">Modelado, planos y renders con iteraciones acordadas.</p></div>
+      <div class="card p-5"><div class="text-2xl">3</div><h3 class="mt-2 font-semibold">Simulación</h3><p class="text-white/70 mt-1 text-sm">Animaciones y validación de movimiento/colisión.</p></div>
+      <div class="card p-5"><div class="text-2xl">4</div><h3 class="mt-2 font-semibold">Implementación</h3><p class="text-white/70 mt-1 text-sm">Opcional: integración de componentes y pruebas.</p></div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="rounded-3xl p-8 md:p-12 border border-white/10 bg-gradient-to-tr from-teal-600/20 to-indigo-600/20">
+      <h2 class="text-3xl font-semibold">¿Listo para empezar?</h2>
+      <p class="text-white/80 mt-2">Envíanos tu idea, boceto o fotos de la pieza. Te respondemos con una estimación clara y tiempos de entrega.</p>
+      <div class="mt-6 flex flex-wrap gap-4">
+        <a href="https://wa.me/18090000000" target="_blank" class="rounded-2xl px-5 py-3 bg-teal-500/90 hover:bg-teal-400 transition">WhatsApp</a>
+        <a href="mailto:contacto@saai.do" class="rounded-2xl px-5 py-3 border border-white/20 hover:border-white/40">saai.ventas@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl md:text-4xl font-semibold">Contáctanos</h2>
+    <p class="text-white/70 mt-2">Cuéntanos tu proyecto. Te respondemos en 24 horas.</p>
+    <form class="mt-8 grid md:grid-cols-2 gap-6" onsubmit="event.preventDefault(); alert('¡Gracias! Te contactaremos en breve.');">
+      <input class="bg-white/10 border border-white/10 rounded-xl px-4 py-3 placeholder:text-white/50" placeholder="Nombre" required />
+      <input type="email" class="bg-white/10 border border-white/10 rounded-xl px-4 py-3 placeholder:text-white/50" placeholder="Email" required />
+      <input class="md:col-span-2 bg-white/10 border border-white/10 rounded-xl px-4 py-3 placeholder:text-white/50" placeholder="Asunto" />
+      <textarea rows="5" class="md:col-span-2 bg-white/10 border border-white/10 rounded-xl px-4 py-3 placeholder:text-white/50" placeholder="Cuéntanos detalles (dimensiones, materiales, plazos)"></textarea>
+      <div class="md:col-span-2">
+        <button type="submit" class="rounded-2xl px-5 py-3 bg-white text-slate-900 font-medium hover:bg-white/90 transition">Enviar consulta</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-10 text-sm text-white/60 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>© <span id="year"></span> SAAI – Servicios de Automatización Agrícola e Industrial</div>
+      <div class="flex gap-6">
+        <a class="hover:text-white" href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a class="hover:text-white" href="#" aria-label="Instagram">Instagram</a>
+        <a class="hover:text-white" href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navDropdown = document.getElementById('navDropdown');
+    if (navToggle) navToggle.addEventListener('click', () => navDropdown.classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
